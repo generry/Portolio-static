@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TODO: replace the page title with your name -->
+  <title>Your Name - Portfolio</title>
+  <!-- TODO: replace the meta description with your own summary -->
+  <meta name="description" content="Personal portfolio of Your Name: selected projects and ways to get in touch.">
+  <style>
+    :root {
+      --bg: #0f1115;
+      --surface: #181b22;
+      --border: #262a33;
+      --text: #e8eaed;
+      --muted: #9aa0ab;
+      --accent: #5eead4;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    /* Typography */
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 8vw, 3.5rem);
+    }
+
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    /* Centred container */
+    header,
+    main,
+    footer {
+      max-width: 60rem;
+      margin-inline: auto;
+      padding-inline: clamp(1.25rem, 5vw, 3rem);
+    }
+
+    /* Spacing */
+    header {
+      padding-block: 4rem 2rem;
+    }
+
+    main {
+      gap: 1.5rem;
+    }
+
+    footer {
+      margin-top: 4rem;
+    }
+
+    /* Card grid */
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card a {
+      margin-top: auto;
+    }
+
+    /* Links */
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+    }
+
+    a:hover,
+    a:focus-visible {
+      text-decoration: underline;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .card a {
+      align-self: flex-start;
+    }
+
+    footer ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    footer a {
+      padding: 0 1rem 0 0;
+    }
+
+    /* Card hover and reduced motion */
+    .card {
+      transition: border-color 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        transition: none !important;
+        animation: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- EDIT ME: replace every value marked TODO below. Edit this file directly; no build step. -->
+  <header>
+    <!-- TODO: replace with your name -->
+    <h1>Your Name</h1>
+    <!-- TODO: replace with your one-line role -->
+    <p class="role">Your one-line role</p>
+  </header>
+
+  <main>
+    <article class="card">
+      <!-- TODO: project one title -->
+      <h2>Project One</h2>
+      <!-- TODO: project one sentence -->
+      <p>A short sentence describing the first project.</p>
+      <!-- TODO: project one link -->
+      <a href="https://example.com/project-one">View project one</a>
+    </article>
+    <article class="card">
+      <!-- TODO: project two title -->
+      <h2>Project Two</h2>
+      <!-- TODO: project two sentence -->
+      <p>A short sentence describing the second project.</p>
+      <!-- TODO: project two link -->
+      <a href="https://example.com/project-two">View project two</a>
+    </article>
+    <article class="card">
+      <!-- TODO: project three title -->
+      <h2>Project Three</h2>
+      <!-- TODO: project three sentence -->
+      <p>A short sentence describing the third project.</p>
+      <!-- TODO: project three link -->
+      <a href="https://example.com/project-three">View project three</a>
+    </article>
+  </main>
+
+  <footer>
+    <ul>
+      <!-- TODO: replace with your email address -->
+      <li><a href="mailto:you@example.com">Email</a></li>
+      <!-- TODO: replace with your GitHub profile URL -->
+      <li><a href="https://github.com/yourname">GitHub</a></li>
+      <!-- TODO: replace with your LinkedIn profile URL -->
+      <li><a href="https://www.linkedin.com/in/yourname">LinkedIn</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
